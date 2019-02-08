@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First View Controller-->
+        <!--Redux-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,6 +31,9 @@
                                         <state key="normal" title="Reduce your carbon footprint" backgroundImage="1">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="doI-fE-5XO" kind="show" id="YWF-24-BVT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3i-D7-n4F">
                                         <rect key="frame" x="0.0" y="158" width="355" height="150"/>
@@ -86,7 +89,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OSI-r0-eEi"/>
+                    <navigationItem key="navigationItem" title="Redux" id="OSI-r0-eEi"/>
                     <connections>
                         <outletCollection property="ideaCards" destination="w0u-ss-t2X" collectionClass="NSMutableArray" id="4aK-h9-dhr"/>
                         <outletCollection property="ideaCards" destination="4fX-Mv-rR7" collectionClass="NSMutableArray" id="Z7u-tw-Y2R"/>
@@ -186,6 +189,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvl-Qk-knF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241378"/>
+        </scene>
+        <!--Reduce Carbon Preview View Controller-->
+        <scene sceneID="uUz-aW-bjv">
+            <objects>
+                <viewController id="doI-fE-5XO" customClass="ReduceCarbonPreviewViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AtA-my-kjy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yPI-1d-iUS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0A8-oc-fJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497" y="-321"/>
         </scene>
     </scenes>
     <resources>
