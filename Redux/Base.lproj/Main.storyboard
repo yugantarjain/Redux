@@ -192,27 +192,30 @@
                                 <string key="text">Reducing your carbon footprint is the most important step you can take to help the world.
 
 With more than 8 billion people living on this planet, every small step you take can have a huge effect.  ~Buy less. You probably have more than you need :)</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-Tc-1mB">
-                                <rect key="frame" x="104" y="452" width="167" height="46"/>
+                                <rect key="frame" x="104" y="496" width="167" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="continue:" destination="doI-fE-5XO" eventType="touchUpInside" id="iq4-BZ-8VX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="top" secondItem="yPI-1d-iUS" secondAttribute="top" constant="66" id="1MN-oc-RjP"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="AtA-my-kjy" secondAttribute="centerX" id="7HT-cm-0is"/>
-                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="104" id="85y-h5-3qC"/>
-                            <constraint firstItem="yPI-1d-iUS" firstAttribute="bottom" secondItem="ugd-Tc-1mB" secondAttribute="bottom" constant="120" id="BkU-XM-5rE"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="ugd-Tc-1mB" secondAttribute="centerX" id="QgB-gb-thN"/>
-                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="top" secondItem="EQn-aT-cDY" secondAttribute="bottom" constant="27" id="eJL-y2-5rf"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="10" id="tkx-w0-wCe"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="ugd-Tc-1mB" secondAttribute="centerX" id="5KA-pF-y4S"/>
+                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="104" id="MHr-7q-ULl"/>
+                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="top" secondItem="EQn-aT-cDY" secondAttribute="bottom" constant="71" id="ao2-T5-83V"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="AtA-my-kjy" secondAttribute="centerX" id="kh9-vl-cpK"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="10" id="r44-Qm-T9y"/>
+                            <constraint firstItem="yPI-1d-iUS" firstAttribute="bottom" secondItem="ugd-Tc-1mB" secondAttribute="bottom" constant="76" id="teM-os-AOS"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="top" secondItem="yPI-1d-iUS" secondAttribute="top" constant="66" id="vJ3-k9-QPI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yPI-1d-iUS"/>
                     </view>
