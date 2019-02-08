@@ -116,21 +116,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Clothing"/>
+                                                <connections>
+                                                    <action selector="Give:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="b5b-CG-Rwg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhN-Ra-fcN">
                                                 <rect key="frame" x="0.0" y="44" width="375" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Utility Item"/>
+                                                <connections>
+                                                    <action selector="Give:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rXC-jR-zEc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09d-XH-STM">
                                                 <rect key="frame" x="0.0" y="88" width="375" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Electronic Item"/>
+                                                <connections>
+                                                    <action selector="Give:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="vid-zD-WJV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RN-gF-p2P">
                                                 <rect key="frame" x="0.0" y="132" width="375" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Other"/>
+                                                <connections>
+                                                    <action selector="Give:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="sqT-x0-bR8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -177,10 +189,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Give/Take" id="LoO-Tq-Hml"/>
                     <connections>
-                        <outletCollection property="giveButtons" destination="qWh-6S-JCl" collectionClass="NSMutableArray" id="Yea-mh-9zX"/>
-                        <outletCollection property="giveButtons" destination="EhN-Ra-fcN" collectionClass="NSMutableArray" id="MTd-La-UNU"/>
-                        <outletCollection property="giveButtons" destination="09d-XH-STM" collectionClass="NSMutableArray" id="jqy-ol-mr7"/>
-                        <outletCollection property="giveButtons" destination="3RN-gF-p2P" collectionClass="NSMutableArray" id="G2X-Mp-UXS"/>
                         <segue destination="hG0-wE-Vkd" kind="show" identifier="toMain" id="MnM-kh-Hhv"/>
                     </connections>
                 </viewController>

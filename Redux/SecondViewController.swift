@@ -18,6 +18,10 @@ class SecondViewController: UIViewController {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBAction func Give(_ sender: UIButton) {
+        nextTitle = sender.titleLabel?.text
+        performSegue(withIdentifier: "toMain", sender: self)
+    }
     
 }
 
