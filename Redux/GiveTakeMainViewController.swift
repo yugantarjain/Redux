@@ -14,6 +14,7 @@ class GiveTakeMainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg"))
 
         // Do any additional setup after loading the view.
         navigationItem.title = navTitle
@@ -25,6 +26,10 @@ class GiveTakeMainViewController: UIViewController {
     }
     
     @IBOutlet weak var text: UITextView!
+    @IBAction func stepper(_ sender: UIStepper) {
+        
+    }
+    @IBOutlet weak var noOfItems: UILabel!
     
     /*
     // MARK: - Navigation
