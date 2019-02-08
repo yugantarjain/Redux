@@ -10,6 +10,8 @@ import UIKit
 
 class GiveTakeMainViewController: UIViewController {
 
+   var navTitle: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
