@@ -172,10 +172,28 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Give/Take" id="LoO-Tq-Hml"/>
+                    <connections>
+                        <segue destination="hG0-wE-Vkd" kind="show" id="MnM-kh-Hhv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1688.8" y="359.37031484257875"/>
+        </scene>
+        <!--Give Take Main View Controller-->
+        <scene sceneID="o92-DR-feC">
+            <objects>
+                <viewController id="hG0-wE-Vkd" customClass="GiveTakeMainViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXx-bd-eJu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="z0A-n9-ERL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Pb-dC-N2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="357"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EjQ-nx-8OL">
