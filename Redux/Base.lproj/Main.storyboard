@@ -193,22 +193,25 @@
         <!--Reduce-->
         <scene sceneID="uUz-aW-bjv">
             <objects>
-                <viewController title="Reduce" id="doI-fE-5XO" customClass="ReduceCarbonPreviewViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Reduce" hidesBottomBarWhenPushed="YES" id="doI-fE-5XO" customClass="ReduceCarbonPreviewViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AtA-my-kjy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-aT-cDY">
-                                <rect key="frame" x="10" y="124" width="355" height="331"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-aT-cDY">
+                                <rect key="frame" x="10" y="130" width="355" height="294.5"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="267" id="zaL-cF-245"/>
+                                </constraints>
                                 <string key="text">Reducing your carbon footprint is the most important step you can take to help the world.
 
 With more than 8 billion people living on this planet, every small step you take can have a huge effect.  ~Buy less. You probably have more than you need :)</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-Tc-1mB">
-                                <rect key="frame" x="104" y="508" width="167" height="46"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-Tc-1mB">
+                                <rect key="frame" x="104" y="452" width="167" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Continue">
@@ -218,16 +221,19 @@ With more than 8 billion people living on this planet, every small step you take
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="top" secondItem="yPI-1d-iUS" secondAttribute="top" constant="60" id="2ZV-gQ-mAt"/>
-                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="top" secondItem="EQn-aT-cDY" secondAttribute="bottom" constant="53" id="5lt-9d-XTP"/>
-                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="104" id="6PD-ve-igt"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="10" id="OO2-gX-psu"/>
-                            <constraint firstItem="yPI-1d-iUS" firstAttribute="bottom" secondItem="ugd-Tc-1mB" secondAttribute="bottom" constant="64" id="WC3-iu-xBQ"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="AtA-my-kjy" secondAttribute="centerX" id="blI-ao-Qsw"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="ugd-Tc-1mB" secondAttribute="centerX" id="hNI-1U-Pv2"/>
+                            <constraint firstItem="yPI-1d-iUS" firstAttribute="bottom" secondItem="ugd-Tc-1mB" secondAttribute="bottom" constant="120" id="0BM-5y-JDY"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="AtA-my-kjy" secondAttribute="centerX" id="23A-hb-OPi"/>
+                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="104" id="7ah-4M-bho"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="10" id="AUV-M6-MA9"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="top" secondItem="yPI-1d-iUS" secondAttribute="top" constant="66" id="Hv2-sX-42e"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="ugd-Tc-1mB" secondAttribute="centerX" id="ktZ-fs-sHK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yPI-1d-iUS"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="continueButton" destination="ugd-Tc-1mB" id="NGy-6x-VKa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0A8-oc-fJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

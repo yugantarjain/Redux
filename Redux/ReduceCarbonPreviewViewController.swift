@@ -15,9 +15,11 @@ class ReduceCarbonPreviewViewController: UIViewController {
         view.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
 
         // Do any additional setup after loading the view.
+        continueButton.layer.cornerRadius = 10
     }
     
-
+    @IBOutlet weak var continueButton: UIButton!
+    
     /*
     // MARK: - Navigation
 
