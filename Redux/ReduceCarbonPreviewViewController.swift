@@ -19,6 +19,10 @@ class ReduceCarbonPreviewViewController: UIViewController {
     }
     
     @IBOutlet weak var continueButton: UIButton!
+    @IBAction func `continue`(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 1
+        navigationController?.popViewController(animated: false)
+    }
     
     /*
     // MARK: - Navigation
