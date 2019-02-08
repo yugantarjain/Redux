@@ -19,7 +19,7 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
         
         // Do any additional setup after loading the view.
         let sib = GIDSignInButton()
-        sib.frame = CGRect(x: 5, y: 50, width: view.frame.width-10, height: 30)
+        sib.frame = CGRect(x: 5, y: view.frame.height/2, width: view.frame.width-10, height: 30)
         view.addSubview(sib)
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().uiDelegate = self
