@@ -21,8 +21,11 @@ class FirstViewController: UIViewController {
 //        ideaCard.backgroundColor = UIColor.blue
 //        view.addSubview(ideaCard)
         
+        
+        
     }
 
-
+    @IBOutlet var ideaCards: [UIButton]!
+    
 }
 
