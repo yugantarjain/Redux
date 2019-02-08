@@ -17,9 +17,15 @@ class GiveTakeMainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         navigationItem.title = navTitle
+        
+        if(navTitle == "Clothing")
+        {
+        
+        }
     }
     
-
+    @IBOutlet weak var text: UITextView!
+    
     /*
     // MARK: - Navigation
 
