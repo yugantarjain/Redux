@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5kL-AL-yWp">
-                                <rect key="frame" x="10" y="74" width="339" height="534"/>
+                                <rect key="frame" x="10" y="74" width="355" height="534"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-hH-1sT">
-                                        <rect key="frame" x="0.0" y="0.0" width="339" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="127.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Reduce your carbon footprint" backgroundImage="1">
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3i-D7-n4F">
-                                        <rect key="frame" x="0.0" y="135.5" width="339" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="355" height="127.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Conserve Electricity" backgroundImage="2">
@@ -41,7 +41,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fX-Mv-rR7">
-                                        <rect key="frame" x="0.0" y="271" width="339" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="271" width="355" height="127.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Recycle your old items" backgroundImage="3">
@@ -49,7 +49,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0u-ss-t2X">
-                                        <rect key="frame" x="0.0" y="406.5" width="339" height="127.5"/>
+                                        <rect key="frame" x="0.0" y="406.5" width="355" height="127.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Planet Earth" backgroundImage="4">
@@ -58,18 +58,19 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="4fX-Mv-rR7" firstAttribute="height" secondItem="DcG-hH-1sT" secondAttribute="height" id="LLr-Ne-r4I"/>
-                                    <constraint firstItem="w0u-ss-t2X" firstAttribute="height" secondItem="DcG-hH-1sT" secondAttribute="height" id="TD4-bc-a2V"/>
-                                    <constraint firstItem="r3i-D7-n4F" firstAttribute="height" secondItem="DcG-hH-1sT" secondAttribute="height" id="i5I-hw-uk9"/>
+                                    <constraint firstItem="r3i-D7-n4F" firstAttribute="height" secondItem="DcG-hH-1sT" secondAttribute="height" id="UVg-of-2sA"/>
+                                    <constraint firstItem="4fX-Mv-rR7" firstAttribute="height" secondItem="DcG-hH-1sT" secondAttribute="height" id="cEH-51-IvT"/>
+                                    <constraint firstItem="w0u-ss-t2X" firstAttribute="height" secondItem="DcG-hH-1sT" secondAttribute="height" id="kyK-2O-sOF"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5kL-AL-yWp" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="4Bf-KT-Gqr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5kL-AL-yWp" secondAttribute="trailing" constant="10" id="JaQ-Ap-QKa"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="5kL-AL-yWp" secondAttribute="bottom" constant="10" id="TIo-Cd-bCF"/>
-                            <constraint firstItem="5kL-AL-yWp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="hHI-CC-V01"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="JEX-AJ-BDa"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="5kL-AL-yWp" secondAttribute="trailing" constant="10" id="KXp-aN-P57"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="W2A-65-ZyW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="5kL-AL-yWp" secondAttribute="bottom" constant="10" id="fGv-fS-EUV"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="10" id="pVb-Ah-hwO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -83,12 +84,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="-320.68965517241378"/>
+            <point key="canvasLocation" x="1570" y="-378"/>
         </scene>
         <!--Give/Take-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
