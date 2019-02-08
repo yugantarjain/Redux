@@ -218,17 +218,23 @@ etc...</string>
                                 <state key="normal" title="Button"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4rb-54-lRs">
-                                <rect key="frame" x="95" y="375" width="171" height="29"/>
+                                <rect key="frame" x="6" y="379" width="383.5" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total No. of Items=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-cx-Pkn">
+                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-ib-Al3">
-                                        <rect key="frame" x="0.0" y="0.0" width="57" height="29"/>
+                                        <rect key="frame" x="212.5" y="0.0" width="57" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-ae-VO0">
-                                        <rect key="frame" x="77" y="0.0" width="94" height="29"/>
+                                        <rect key="frame" x="289.5" y="0.0" width="94" height="29"/>
                                         <connections>
                                             <action selector="stepper:" destination="hG0-wE-Vkd" eventType="valueChanged" id="zOF-Ue-nD4"/>
                                         </connections>

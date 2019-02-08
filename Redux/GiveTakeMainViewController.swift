@@ -15,10 +15,11 @@ class GiveTakeMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
-        
 
         // Do any additional setup after loading the view.
         navigationItem.title = navTitle
+        noOfItems.text = "0"
+        
         
         if(navTitle == "Clothing")
         {
@@ -28,7 +29,7 @@ class GiveTakeMainViewController: UIViewController {
     
     @IBOutlet weak var text: UITextView!
     @IBAction func stepper(_ sender: UIStepper) {
-        
+        noOfItems.text = "\(Int(sender.value))"
     }
     @IBOutlet weak var noOfItems: UILabel!
     
