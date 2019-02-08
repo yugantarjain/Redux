@@ -22,6 +22,10 @@ class SecondViewController: UIViewController {
         nextTitle = sender.titleLabel?.text
         performSegue(withIdentifier: "toMain", sender: self)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let next = segue.destination as! GiveTakeMainViewController
+        next.navTitle = nextTitle
+    }
     
 }
 
