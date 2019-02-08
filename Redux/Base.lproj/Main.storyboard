@@ -173,6 +173,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Give/Take" id="LoO-Tq-Hml"/>
                     <connections>
+                        <outletCollection property="giveButtons" destination="qWh-6S-JCl" collectionClass="NSMutableArray" id="Yea-mh-9zX"/>
+                        <outletCollection property="giveButtons" destination="EhN-Ra-fcN" collectionClass="NSMutableArray" id="MTd-La-UNU"/>
+                        <outletCollection property="giveButtons" destination="09d-XH-STM" collectionClass="NSMutableArray" id="jqy-ol-mr7"/>
+                        <outletCollection property="giveButtons" destination="3RN-gF-p2P" collectionClass="NSMutableArray" id="G2X-Mp-UXS"/>
                         <segue destination="hG0-wE-Vkd" kind="show" id="MnM-kh-Hhv"/>
                     </connections>
                 </viewController>
