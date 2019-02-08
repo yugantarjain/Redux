@@ -8,5 +8,7 @@ target 'Redux' do
   # Pods for Redux
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
+    pod 'Firebase/Auth'
+    pod 'GoogleSignIn'
 
 end
