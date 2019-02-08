@@ -213,28 +213,27 @@ etc...</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zQ-79-XMW">
-                                <rect key="frame" x="164" y="466" width="46" height="30"/>
+                                <rect key="frame" x="163" y="466" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Submit"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4rb-54-lRs">
-                                <rect key="frame" x="6" y="379" width="383.5" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4rb-54-lRs">
+                                <rect key="frame" x="0.0" y="376" width="375" height="29"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total No. of Items=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-cx-Pkn">
-                                        <rect key="frame" x="0.0" y="0.0" width="192.5" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total No. of Items=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-cx-Pkn">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-ib-Al3">
-                                        <rect key="frame" x="212.5" y="0.0" width="57" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-ib-Al3">
+                                        <rect key="frame" x="204" y="0.0" width="57" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-ae-VO0">
-                                        <rect key="frame" x="289.5" y="0.0" width="94" height="29"/>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-ae-VO0">
+                                        <rect key="frame" x="281" y="0.0" width="94" height="29"/>
                                         <connections>
                                             <action selector="stepper:" destination="hG0-wE-Vkd" eventType="valueChanged" id="zOF-Ue-nD4"/>
                                         </connections>
@@ -245,6 +244,8 @@ etc...</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Dr-Zd-Y8s" firstAttribute="leading" secondItem="z0A-n9-ERL" secondAttribute="leading" constant="10" id="5Bc-QM-LGn"/>
+                            <constraint firstItem="4rb-54-lRs" firstAttribute="leading" secondItem="z0A-n9-ERL" secondAttribute="leading" id="6Zu-NW-WiI"/>
+                            <constraint firstAttribute="trailing" secondItem="4rb-54-lRs" secondAttribute="trailing" id="A1D-39-RwJ"/>
                             <constraint firstItem="z0A-n9-ERL" firstAttribute="bottom" secondItem="6Dr-Zd-Y8s" secondAttribute="bottom" constant="300" id="IsL-08-NmO"/>
                             <constraint firstItem="6Dr-Zd-Y8s" firstAttribute="top" secondItem="z0A-n9-ERL" secondAttribute="top" constant="10" id="a0T-Ex-fkB"/>
                             <constraint firstItem="z0A-n9-ERL" firstAttribute="trailing" secondItem="6Dr-Zd-Y8s" secondAttribute="trailing" constant="10" id="dL3-Ue-GIA"/>
