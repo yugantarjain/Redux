@@ -22,13 +22,7 @@ class GiveTakeMainViewController: UIViewController {
         submitButton.layer.cornerRadius = 10
         
         
-        if(navTitle == "Clothing")
-        {
-            text.placeholder = "Enter details, eg-\n1. 5 Shirts, L, Men.\n2. 2 Kurtis, M, Women."
-        }
     }
-    
-    @IBOutlet weak var text: UITextField!
     
     
     @IBAction func stepper(_ sender: UIStepper) {

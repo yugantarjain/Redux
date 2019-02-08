@@ -202,25 +202,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Dr-Zd-Y8s">
-                                <rect key="frame" x="10" y="74" width="355" height="246.5"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zQ-79-XMW">
-                                <rect key="frame" x="102" y="496" width="171" height="41"/>
+                                <rect key="frame" x="102" y="478" width="171" height="41"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="AAm-V7-y5A"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EAR-0B-OHC">
-                                <rect key="frame" x="102" y="374.5" width="171" height="70.5"/>
+                                <rect key="frame" x="102" y="358.5" width="171" height="70.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Total Items" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtN-cx-Pkn">
                                         <rect key="frame" x="21" y="0.0" width="129.5" height="33.5"/>
@@ -247,25 +238,30 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Details-" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gGj-Fc-YbG">
+                                <rect key="frame" x="10" y="94" width="355" height="206.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="z0A-n9-ERL" firstAttribute="bottom" secondItem="9zQ-79-XMW" secondAttribute="bottom" constant="81" id="2vR-pP-hjl"/>
-                            <constraint firstItem="6Dr-Zd-Y8s" firstAttribute="leading" secondItem="z0A-n9-ERL" secondAttribute="leading" constant="10" id="6qG-bF-ZOZ"/>
-                            <constraint firstItem="6Dr-Zd-Y8s" firstAttribute="centerX" secondItem="qXx-bd-eJu" secondAttribute="centerX" id="C7L-Ye-MGk"/>
-                            <constraint firstItem="EAR-0B-OHC" firstAttribute="trailing" secondItem="9zQ-79-XMW" secondAttribute="trailing" id="G0d-Oh-IwM"/>
-                            <constraint firstItem="6Dr-Zd-Y8s" firstAttribute="top" secondItem="z0A-n9-ERL" secondAttribute="top" constant="10" id="IzW-eV-EhF"/>
-                            <constraint firstItem="EAR-0B-OHC" firstAttribute="top" secondItem="6Dr-Zd-Y8s" secondAttribute="bottom" constant="54" id="Ud8-oi-6sd"/>
-                            <constraint firstItem="9zQ-79-XMW" firstAttribute="top" secondItem="EAR-0B-OHC" secondAttribute="bottom" constant="51" id="Uma-J5-H1k"/>
-                            <constraint firstItem="EAR-0B-OHC" firstAttribute="leading" secondItem="9zQ-79-XMW" secondAttribute="leading" id="cGH-WI-5zC"/>
-                            <constraint firstItem="6Dr-Zd-Y8s" firstAttribute="centerX" secondItem="EAR-0B-OHC" secondAttribute="centerX" id="tJg-PL-fz9"/>
+                            <constraint firstItem="EAR-0B-OHC" firstAttribute="trailing" secondItem="9zQ-79-XMW" secondAttribute="trailing" id="3Nx-at-WfB"/>
+                            <constraint firstItem="gGj-Fc-YbG" firstAttribute="leading" secondItem="z0A-n9-ERL" secondAttribute="leading" constant="10" id="D3q-w7-gmh"/>
+                            <constraint firstItem="9zQ-79-XMW" firstAttribute="top" secondItem="EAR-0B-OHC" secondAttribute="bottom" constant="49" id="JrW-cg-LY8"/>
+                            <constraint firstItem="EAR-0B-OHC" firstAttribute="leading" secondItem="9zQ-79-XMW" secondAttribute="leading" id="aPb-9r-MFG"/>
+                            <constraint firstItem="gGj-Fc-YbG" firstAttribute="centerX" secondItem="EAR-0B-OHC" secondAttribute="centerX" id="muj-O2-9wr"/>
+                            <constraint firstItem="gGj-Fc-YbG" firstAttribute="top" secondItem="z0A-n9-ERL" secondAttribute="top" constant="30" id="nrS-uc-w0u"/>
+                            <constraint firstItem="EAR-0B-OHC" firstAttribute="top" secondItem="gGj-Fc-YbG" secondAttribute="bottom" constant="58" id="o9C-dt-HK8"/>
+                            <constraint firstItem="gGj-Fc-YbG" firstAttribute="centerX" secondItem="qXx-bd-eJu" secondAttribute="centerX" id="sWY-TF-x3D"/>
+                            <constraint firstItem="z0A-n9-ERL" firstAttribute="bottom" secondItem="9zQ-79-XMW" secondAttribute="bottom" constant="99" id="ulS-J6-Pf5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z0A-n9-ERL"/>
                     </view>
                     <connections>
                         <outlet property="noOfItems" destination="Q5u-ib-Al3" id="FLC-Ac-yJ7"/>
                         <outlet property="submitButton" destination="9zQ-79-XMW" id="ONN-Oy-Fkd"/>
-                        <outlet property="text" destination="6Dr-Zd-Y8s" id="3k3-cm-fye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pb-dC-N2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
