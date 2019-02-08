@@ -190,20 +190,44 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241378"/>
         </scene>
-        <!--Reduce Carbon Preview View Controller-->
+        <!--Reduce-->
         <scene sceneID="uUz-aW-bjv">
             <objects>
-                <viewController id="doI-fE-5XO" customClass="ReduceCarbonPreviewViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Reduce" id="doI-fE-5XO" customClass="ReduceCarbonPreviewViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AtA-my-kjy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugd-Tc-1mB">
+                                <rect key="frame" x="73" y="557" width="228" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-aT-cDY">
+                                <rect key="frame" x="10" y="148" width="355" height="331.33333333333326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Reducing your carbon footprint is the most important step you can take to help the world.
+
+With more than 8 billion people living on this planet, every small step you take can have a huge effect.  ~Buy less. You probably have more than you need :)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="10" id="921-qN-nyP"/>
+                            <constraint firstItem="yPI-1d-iUS" firstAttribute="trailing" secondItem="EQn-aT-cDY" secondAttribute="trailing" constant="10" id="h9G-ER-MfE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yPI-1d-iUS"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0A8-oc-fJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2497" y="-321"/>
+            <point key="canvasLocation" x="2496.8000000000002" y="-321.42857142857144"/>
         </scene>
     </scenes>
     <resources>
