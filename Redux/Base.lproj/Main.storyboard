@@ -275,7 +275,19 @@
                     <view key="view" contentMode="scaleToFill" id="mAW-ag-wRQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redux" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tia-Mx-HrT">
+                                <rect key="frame" x="122.5" y="60" width="130" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tia-Mx-HrT" firstAttribute="top" secondItem="R3O-xP-cKj" secondAttribute="top" constant="40" id="M0c-os-he1"/>
+                            <constraint firstItem="tia-Mx-HrT" firstAttribute="centerX" secondItem="mAW-ag-wRQ" secondAttribute="centerX" id="OgT-fe-T4W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="R3O-xP-cKj"/>
                     </view>
                     <connections>
