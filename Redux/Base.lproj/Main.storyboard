@@ -92,20 +92,66 @@
         <!--Give/Take-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buy less, give more!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="107" y="81" width="162" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy less, share more!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <rect key="frame" x="97" y="81" width="184" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="gs5-pW-1Ig">
+                                <rect key="frame" x="135" y="155" width="112" height="202.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I can give:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAq-Qv-AsW">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fdw-6k-VsA">
+                                        <rect key="frame" x="0.0" y="58.5" width="112" height="144"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWh-6S-JCl">
+                                                <rect key="frame" x="0.0" y="0.0" width="112" height="30"/>
+                                                <state key="normal" title="Clothing"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhN-Ra-fcN">
+                                                <rect key="frame" x="0.0" y="38" width="112" height="30"/>
+                                                <state key="normal" title="Utility Item"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09d-XH-STM">
+                                                <rect key="frame" x="0.0" y="76" width="112" height="30"/>
+                                                <state key="normal" title="Electronic Item"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RN-gF-p2P">
+                                                <rect key="frame" x="0.0" y="114" width="112" height="30"/>
+                                                <state key="normal" title="Other"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qWh-6S-JCl" secondAttribute="trailing" id="DyL-LB-tGN"/>
+                                            <constraint firstItem="09d-XH-STM" firstAttribute="trailing" secondItem="3RN-gF-p2P" secondAttribute="trailing" id="QN9-O1-1M1"/>
+                                            <constraint firstItem="EhN-Ra-fcN" firstAttribute="trailing" secondItem="09d-XH-STM" secondAttribute="trailing" id="mge-b5-9DM"/>
+                                            <constraint firstItem="qWh-6S-JCl" firstAttribute="trailing" secondItem="EhN-Ra-fcN" secondAttribute="trailing" id="nE6-B5-DCJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fdw-6k-VsA" firstAttribute="trailing" secondItem="OAq-Qv-AsW" secondAttribute="trailing" id="pg3-15-JVG"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gs5-pW-1Ig" firstAttribute="top" secondItem="NDk-cv-Gan" secondAttribute="bottom" constant="50" id="AJM-ig-qQ8"/>
+                            <constraint firstItem="gs5-pW-1Ig" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="135" id="Qin-1r-l8T"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="17" id="mY0-wS-Lqc"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="97" id="yO8-Jo-Bnm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Give/Take" id="LoO-Tq-Hml"/>
