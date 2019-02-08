@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5kL-AL-yWp">
-                                <rect key="frame" x="10" y="64" width="355" height="504"/>
+                                <rect key="frame" x="10" y="69" width="355" height="544"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-hH-1sT">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="Gsq-2u-Jhu"/>
+                                            <constraint firstAttribute="height" constant="130" id="9lm-cJ-8JE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Reduce your carbon footprint" backgroundImage="1">
@@ -36,10 +36,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3i-D7-n4F">
-                                        <rect key="frame" x="0.0" y="128" width="355" height="120"/>
+                                        <rect key="frame" x="0.0" y="138" width="355" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="r4K-bY-TDt"/>
+                                            <constraint firstAttribute="height" constant="130" id="x4H-7O-z5S"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Conserve Electricity" backgroundImage="2">
@@ -47,10 +47,10 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fX-Mv-rR7">
-                                        <rect key="frame" x="0.0" y="256" width="355" height="120"/>
+                                        <rect key="frame" x="0.0" y="276" width="355" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="sKE-Rv-kMo"/>
+                                            <constraint firstAttribute="height" constant="130" id="oUM-0t-TtR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Recycle your old items" backgroundImage="3">
@@ -58,34 +58,22 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0u-ss-t2X">
-                                        <rect key="frame" x="0.0" y="384" width="355" height="120"/>
+                                        <rect key="frame" x="0.0" y="414" width="355" height="130"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="qbY-Yn-Nuo"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Planet Earth" backgroundImage="4">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="r3i-D7-n4F" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="2Ls-V3-jmC"/>
-                                    <constraint firstAttribute="trailing" secondItem="4fX-Mv-rR7" secondAttribute="trailing" id="5Q1-GC-lkv"/>
-                                    <constraint firstItem="4fX-Mv-rR7" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="6Bt-wS-7kM"/>
-                                    <constraint firstItem="w0u-ss-t2X" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="cQR-pW-o2m"/>
-                                    <constraint firstAttribute="trailing" secondItem="w0u-ss-t2X" secondAttribute="trailing" id="ht0-FA-AzS"/>
-                                    <constraint firstAttribute="trailing" secondItem="DcG-hH-1sT" secondAttribute="trailing" id="mOW-T0-pF3"/>
-                                    <constraint firstAttribute="trailing" secondItem="r3i-D7-n4F" secondAttribute="trailing" id="w89-d3-YjR"/>
-                                    <constraint firstItem="DcG-hH-1sT" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="wwX-tf-ikg"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="5kL-AL-yWp" secondAttribute="trailing" constant="10" id="WB9-5a-B0N"/>
-                            <constraint firstItem="5kL-AL-yWp" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="Xgv-EZ-mxE"/>
-                            <constraint firstItem="5kL-AL-yWp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="j7l-MQ-8P1"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="1Bo-GF-tuZ"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="5" id="DBF-UP-wwv"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="WXY-Ev-sYq"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="5kL-AL-yWp" secondAttribute="bottom" constant="5" id="m7r-2d-Mec"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -198,12 +186,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-aT-cDY">
-                                <rect key="frame" x="10" y="130" width="355" height="294.5"/>
-                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="267" id="zaL-cF-245"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-aT-cDY">
+                                <rect key="frame" x="10" y="130" width="355" height="295"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Reducing your carbon footprint is the most important step you can take to help the world.
 
 With more than 8 billion people living on this planet, every small step you take can have a huge effect.  ~Buy less. You probably have more than you need :)</string>
@@ -221,12 +206,13 @@ With more than 8 billion people living on this planet, every small step you take
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yPI-1d-iUS" firstAttribute="bottom" secondItem="ugd-Tc-1mB" secondAttribute="bottom" constant="120" id="0BM-5y-JDY"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="AtA-my-kjy" secondAttribute="centerX" id="23A-hb-OPi"/>
-                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="104" id="7ah-4M-bho"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="10" id="AUV-M6-MA9"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="top" secondItem="yPI-1d-iUS" secondAttribute="top" constant="66" id="Hv2-sX-42e"/>
-                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="ugd-Tc-1mB" secondAttribute="centerX" id="ktZ-fs-sHK"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="top" secondItem="yPI-1d-iUS" secondAttribute="top" constant="66" id="1MN-oc-RjP"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="AtA-my-kjy" secondAttribute="centerX" id="7HT-cm-0is"/>
+                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="104" id="85y-h5-3qC"/>
+                            <constraint firstItem="yPI-1d-iUS" firstAttribute="bottom" secondItem="ugd-Tc-1mB" secondAttribute="bottom" constant="120" id="BkU-XM-5rE"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="centerX" secondItem="ugd-Tc-1mB" secondAttribute="centerX" id="QgB-gb-thN"/>
+                            <constraint firstItem="ugd-Tc-1mB" firstAttribute="top" secondItem="EQn-aT-cDY" secondAttribute="bottom" constant="27" id="eJL-y2-5rf"/>
+                            <constraint firstItem="EQn-aT-cDY" firstAttribute="leading" secondItem="yPI-1d-iUS" secondAttribute="leading" constant="10" id="tkx-w0-wCe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yPI-1d-iUS"/>
                     </view>
