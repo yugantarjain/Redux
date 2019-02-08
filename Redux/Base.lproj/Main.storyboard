@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,70 +23,70 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcG-hH-1sT">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
-                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="xQP-wC-WQz"/>
+                                            <constraint firstAttribute="height" constant="150" id="pTK-Sv-fDm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Reduce your carbon footprint" backgroundImage="1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3i-D7-n4F">
                                         <rect key="frame" x="0.0" y="158" width="355" height="150"/>
-                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="l1T-wX-hQQ"/>
+                                            <constraint firstAttribute="height" constant="150" id="X3V-j3-hAN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Conserve Electricity" backgroundImage="2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fX-Mv-rR7">
                                         <rect key="frame" x="0.0" y="316" width="355" height="150"/>
-                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="Nxs-zh-MBY"/>
+                                            <constraint firstAttribute="height" constant="150" id="JpS-Cj-rIN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Recycle your old items" backgroundImage="3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0u-ss-t2X">
                                         <rect key="frame" x="0.0" y="474" width="355" height="150"/>
-                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="eFJ-5R-s7y"/>
+                                            <constraint firstAttribute="height" constant="150" id="ULr-x5-exb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Planet Earth" backgroundImage="4">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="w0u-ss-t2X" secondAttribute="trailing" id="01J-qc-e1e"/>
-                                    <constraint firstAttribute="trailing" secondItem="r3i-D7-n4F" secondAttribute="trailing" id="1Cx-C5-djg"/>
-                                    <constraint firstItem="r3i-D7-n4F" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="2hD-JH-nKO"/>
-                                    <constraint firstAttribute="trailing" secondItem="4fX-Mv-rR7" secondAttribute="trailing" id="AsB-54-TRL"/>
-                                    <constraint firstAttribute="trailing" secondItem="DcG-hH-1sT" secondAttribute="trailing" id="B8w-YJ-4mc"/>
-                                    <constraint firstItem="w0u-ss-t2X" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="SlT-vh-9r1"/>
-                                    <constraint firstItem="DcG-hH-1sT" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="hX2-6R-9mM"/>
-                                    <constraint firstItem="4fX-Mv-rR7" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="qnY-an-P5O"/>
+                                    <constraint firstAttribute="trailing" secondItem="4fX-Mv-rR7" secondAttribute="trailing" id="3oG-38-Qdf"/>
+                                    <constraint firstItem="DcG-hH-1sT" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="IJY-HE-jV0"/>
+                                    <constraint firstItem="w0u-ss-t2X" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="Idn-TA-DuQ"/>
+                                    <constraint firstItem="r3i-D7-n4F" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="OF8-U3-276"/>
+                                    <constraint firstItem="4fX-Mv-rR7" firstAttribute="leading" secondItem="5kL-AL-yWp" secondAttribute="leading" id="Q56-KL-VyT"/>
+                                    <constraint firstAttribute="trailing" secondItem="DcG-hH-1sT" secondAttribute="trailing" id="cKa-b8-n1x"/>
+                                    <constraint firstAttribute="trailing" secondItem="r3i-D7-n4F" secondAttribute="trailing" id="q9B-gA-bnj"/>
+                                    <constraint firstAttribute="trailing" secondItem="w0u-ss-t2X" secondAttribute="trailing" id="rAu-mS-g4R"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5kL-AL-yWp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="9Oe-vT-Q6t"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="5kL-AL-yWp" secondAttribute="trailing" constant="10" id="Djy-jw-GfW"/>
-                            <constraint firstItem="5kL-AL-yWp" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="a0H-vf-2E1"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="1Ff-ba-Uct"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="5kL-AL-yWp" secondAttribute="trailing" constant="10" id="Two-HZ-R2L"/>
+                            <constraint firstItem="5kL-AL-yWp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="sWw-gh-upm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="OSI-r0-eEi"/>
                     <connections>
                         <outletCollection property="ideaCards" destination="w0u-ss-t2X" collectionClass="NSMutableArray" id="4aK-h9-dhr"/>
                         <outletCollection property="ideaCards" destination="4fX-Mv-rR7" collectionClass="NSMutableArray" id="Z7u-tw-Y2R"/>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="1692" y="-320.68965517241378"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -160,7 +160,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="70U-uj-Y9Z" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
@@ -168,8 +168,31 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--First-->
+        <scene sceneID="U3n-XX-77k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="70U-uj-Y9Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pmB-Qc-YI6">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Jj3-Wq-bjG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvl-Qk-knF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241378"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="1" width="5312" height="2988"/>
+        <image name="2" width="4032" height="3024"/>
+        <image name="3" width="2988" height="3984"/>
+        <image name="4" width="3024" height="4032"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
