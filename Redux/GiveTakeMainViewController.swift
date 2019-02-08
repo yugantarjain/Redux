@@ -19,20 +19,24 @@ class GiveTakeMainViewController: UIViewController {
         // Do any additional setup after loading the view.
         navigationItem.title = navTitle
         noOfItems.text = "0"
+        submitButton.layer.cornerRadius = 10
         
         
         if(navTitle == "Clothing")
         {
-        
+            text.placeholder = "Enter details, eg-\n1. 5 Shirts, L, Men.\n2. 2 Kurtis, M, Women."
         }
     }
     
-    @IBOutlet weak var text: UITextView!
+    @IBOutlet weak var text: UITextField!
+    
+    
     @IBAction func stepper(_ sender: UIStepper) {
         noOfItems.text = "\(Int(sender.value))"
     }
     @IBOutlet weak var noOfItems: UILabel!
     
+    @IBOutlet weak var submitButton: UIButton!
     /*
     // MARK: - Navigation
 
