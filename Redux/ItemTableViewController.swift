@@ -11,6 +11,8 @@ import Firebase
 
 class ItemTableViewController: UITableViewController {
     
+    var ref: DocumentReference? = nil
+    
     var category = [String]()
     var desc = [String]()
     
