@@ -37,7 +37,7 @@ class GiveTakeMainViewController: UIViewController {
     
     @IBAction func submit(_ sender: UIButton) {
         ref = db.collection("items").addDocument(data: [
-            "category": navTitle,
+            "category" : navTitle,
             "desc" : text.text,
             "name" : Auth.auth().currentUser?.displayName,
             "number": noOfItems.text
