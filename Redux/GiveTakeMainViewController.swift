@@ -18,6 +18,7 @@ class GiveTakeMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
+        status.isHidden = true
 
         // Do any additional setup after loading the view.
         navigationItem.title = navTitle
@@ -40,9 +41,21 @@ class GiveTakeMainViewController: UIViewController {
             "desc" : text.text,
             "name" : Auth.auth().currentUser?.displayName,
             "number": noOfItems.text
-            ])
+        ]) { err in
+            if let err = err {
+                print("Error adding document: \(err)")
+                self.status.text = "Try Again"
+                self.status.isHidden = false
+            } else {
+                print("Document added with ID: \(self.ref!.documentID)")
+                self.status.text = "Successfully Submitted"
+                self.status.isHidden = false
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
     }
     
+    @IBOutlet weak var status: UILabel!
     
     /*
     // MARK: - Navigation
