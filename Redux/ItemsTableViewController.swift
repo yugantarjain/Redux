@@ -29,8 +29,8 @@ class ItemsTableViewController: UITableViewController {
             } else {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
-                    self.category.append(document.value(forKey: "category") as! String)
-                    self.category.append(document.value(forKey: "desc") as! String)
+//                    self.category.append(document.value(forKey: "category") as! String)
+//                    self.desc.append(document.value(forKey: "desc") as! String)
                 }
             }
         }
