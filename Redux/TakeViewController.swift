@@ -34,15 +34,18 @@ class TakeViewController: UIViewController {
     @IBAction func ConfirmTake(_ sender: UIButton) {
         
         db.collection("items").getDocuments() { (querySnapshot, err) in
-            if let err = err {
+            if let err = err
+            {
                 print("Error getting documents: \(err)")
-            } else {
+            }
+            else
+            {
                 for document in querySnapshot!.documents {
 //                    self.name.append(document.get("name") as! String)
                     let zxc = document.get("name") as! String
                     if zxc == self.a
                     {
-
+                        document.reference.delete()
                     }
                 }
             }
