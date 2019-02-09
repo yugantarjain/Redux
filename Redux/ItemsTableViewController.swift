@@ -63,19 +63,29 @@ class ItemsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        cat = table.cellForRow(at: indexPath)?.textLabel?.text
-        des = table.cellForRow(at: indexPath)?.detailTextLabel?.text
+        cat = tableView.cellForRow(at: indexPath)?.textLabel?.text
+        des = tableView.cellForRow(at: indexPath)?.detailTextLabel?.text
         name1 = name[indexPath.count]
+        
+        print(cat)
+        print(des)
+        print(name1)
         
         
         performSegue(withIdentifier: "toTake", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let a = segue.destination as! TakeViewController
-        a.name.text = name1
-        a.category.text = cat
-        a.desc.text = des
+        if(segue.identifier=="toTake")
+        {
+            let next = segue.destination as! TakeViewController
+            next.a = name1
+            next.b = cat
+            next.c = des
+        }
+//        a.name.text = name1
+//        a.category.text = cat
+//        a.desc.text = des
         
     }
 

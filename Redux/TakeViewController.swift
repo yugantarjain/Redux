@@ -9,11 +9,18 @@
 import UIKit
 
 class TakeViewController: UIViewController {
+    
+    var a: String!
+    var b: String!
+    var c: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        name.text = a
+        category.text = b
+        desc.text = c
     }
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var category: UILabel!
