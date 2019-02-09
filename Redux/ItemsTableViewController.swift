@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class ItemsTableViewController: UITableViewController {
+    
+    var category = [String]()
+    var desc = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,18 @@ class ItemsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        db.collection("items").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    self.category.append(document.value(forKey: "category") as! String)
+                    self.category.append(document.value(forKey: "desc") as! String)
+                }
+            }
+        }
     }
 
     // MARK: - Table view data source
