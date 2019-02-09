@@ -1,5 +1,5 @@
 //
-//  ItemTableViewController.swift
+//  ItemsTableViewController.swift
 //  Redux
 //
 //  Created by yugantar jain on 09/02/19.
@@ -7,17 +7,8 @@
 //
 
 import UIKit
-import Firebase
 
-class ItemTableViewController: UITableViewController {
-    
-    var ref: DocumentReference? = nil
-    
-    var category = [String]()
-    var desc = [String]()
-    
-    @IBOutlet weak var table: UITableView!
-    
+class ItemsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,34 +18,18 @@ class ItemTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        db.collection("items").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                    self.category.append(document.value(forKey: "category") as! String)
-                    self.desc.append(document.value(forKey: "desc") as! String)
-                }
-            }
-            self.table.reloadData()
-        }
     }
 
     // MARK: - Table view data source
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell")
-        cell?.textLabel?.text = category[indexPath.row]
-        cell?.detailTextLabel?.text = desc[indexPath.row]
-        return cell!
-        
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return category.count
+        return 0
     }
 
     /*
