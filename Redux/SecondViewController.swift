@@ -19,16 +19,25 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         db.collection("items").getDocuments { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
             } else {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
+                    if(document.data().keys.description == "number")
+                    {
+                        self.count = self.count + Int(document.data().values.description)!
+                    }
                 }
             }
         }
+        print(count)
     }
+    
     @IBAction func Give(_ sender: UIButton) {
         nextTitle = sender.titleLabel?.text
         performSegue(withIdentifier: "toMain", sender: self)
