@@ -9,8 +9,9 @@
 import UIKit
 import Firebase
 
-class ResourcesTableViewController: UITableViewController {
+class ResourcesTableViewController: UITableViewController  {
     
+    var ref: DocumentReference? = nil
     
     
     var postData = [String]()
@@ -46,13 +47,21 @@ class ResourcesTableViewController: UITableViewController {
 //            self.resourcesTable.reloadData()
 //        })
         
+        db.collection("cities").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+        
     }
-    @IBOutlet weak var resourcesTable: UITableView!
     
-    // MARK: - Table view data source
+     // MARK: - Table view data source
     
-    //    override func numberOfSections(in tableView: UITableView) -> Int {
-    //        // #warning Incomplete implementation, return the number of sections
+    //    override func numberOfSections(in tableView: UITableView) -> Int {  //        // #warning Incomplete implementation, return the number of sections
     //        return 0
     //    }
     
