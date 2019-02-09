@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class TakeViewController: UIViewController {
+    
+    var ref: DocumentReference! = nil
     
     var a: String!
     var b: String!
@@ -28,7 +31,24 @@ class TakeViewController: UIViewController {
     @IBOutlet weak var desc: UILabel!
     @IBOutlet weak var confirm: UIButton!
     
+    @IBAction func ConfirmTake(_ sender: UIButton) {
+        
+        db.collection("items").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+//                    self.name.append(document.get("name") as! String)
+                    let zxc = document.get("name") as! String
+                    if zxc == self.a
+                    {
 
+                    }
+                }
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
