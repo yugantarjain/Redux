@@ -42,8 +42,8 @@ class TakeViewController: UIViewController {
             {
                 for document in querySnapshot!.documents {
 //                    self.name.append(document.get("name") as! String)
-                    let zxc = document.get("name") as! String
-                    if zxc == self.a
+                    let zxc = document.get("desc") as! String
+                    if zxc == self.c
                     {
                         document.reference.delete()
                     }
