@@ -65,7 +65,7 @@ class ItemsTableViewController: UITableViewController {
         
         cat = tableView.cellForRow(at: indexPath)?.textLabel?.text
         des = tableView.cellForRow(at: indexPath)?.detailTextLabel?.text
-        name1 = name[indexPath.count]
+        name1 = name[indexPath[1]]
         
         print(cat)
         print(des)
