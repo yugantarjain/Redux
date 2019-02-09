@@ -43,9 +43,13 @@ class SecondViewController: UIViewController {
         performSegue(withIdentifier: "toMain", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let next = segue.destination as! GiveTakeMainViewController
-        next.navTitle = nextTitle
+        if(segue.identifier=="toMain")
+        {
+            let next = segue.destination as! GiveTakeMainViewController
+            next.navTitle = nextTitle
+        }
     }
+    
     @IBOutlet weak var take: UIButton!
     
 }

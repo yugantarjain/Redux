@@ -162,7 +162,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Click Here"/>
                                 <connections>
-                                    <segue destination="dBC-F9-aiO" kind="show" id="vgc-52-f3d"/>
+                                    <segue destination="dBC-F9-aiO" kind="show" id="abv-Lf-GcI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items available for you:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpK-01-3cb">
@@ -246,6 +246,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WSp-Zn-ROT"/>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="JxE-ax-jsF" id="Wmc-DE-7FZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFM-4x-BAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
