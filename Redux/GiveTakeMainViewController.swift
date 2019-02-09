@@ -38,6 +38,7 @@ class GiveTakeMainViewController: UIViewController {
     
     @IBAction func submit(_ sender: UIButton) {
         ref = db.collection("items").addDocument(data: [
+            "category": navTitle,
             "desc" : text.text,
             "name" : Auth.auth().currentUser?.displayName,
             "number": noOfItems.text
@@ -50,7 +51,7 @@ class GiveTakeMainViewController: UIViewController {
                 print("Document added with ID: \(self.ref!.documentID)")
                 self.status.text = "Successfully Submitted"
                 self.status.isHidden = false
-                self.navigationController?.popViewController(animated: true)
+//                self.navigationController?.popViewController(animated: true)
             }
         }
     }
