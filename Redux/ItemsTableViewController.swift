@@ -13,7 +13,8 @@ class ItemsTableViewController: UITableViewController {
     
     var category = [String]()
     var desc = [String]()
-
+    @IBOutlet var table: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +36,7 @@ class ItemsTableViewController: UITableViewController {
                     self.desc.append(document.get("desc") as! String)
                 }
             }
+            self.table.reloadData()
         }
     }
 
@@ -47,7 +49,7 @@ class ItemsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         cell?.textLabel?.text = category[indexPath.row]
         cell?.detailTextLabel?.text = desc[indexPath.row]
         return cell!
