@@ -7,16 +7,27 @@
 //
 
 import UIKit
+import Firebase
 
 class SecondViewController: UIViewController {
     
     var nextTitle: String?
-    
+    var ref: DocumentReference? = nil
+    var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(patternImage: UIImage(named: "1.jpg")!)
         // Do any additional setup after loading the view, typically from a nib.
+        db.collection("items").getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
     }
     @IBAction func Give(_ sender: UIButton) {
         nextTitle = sender.titleLabel?.text
@@ -26,6 +37,7 @@ class SecondViewController: UIViewController {
         let next = segue.destination as! GiveTakeMainViewController
         next.navTitle = nextTitle
     }
+    @IBOutlet weak var take: UIButton!
     
 }
 

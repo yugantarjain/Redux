@@ -12,8 +12,7 @@ import Firebase
 class GiveTakeMainViewController: UIViewController {
     
     var ref: DocumentReference? = nil
-
-   var navTitle: String?
+    var navTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()

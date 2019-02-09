@@ -187,6 +187,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Give/Take" id="LoO-Tq-Hml"/>
                     <connections>
+                        <outlet property="take" destination="1uN-kE-40b" id="f0K-jb-LbC"/>
                         <segue destination="hG0-wE-Vkd" kind="show" identifier="toMain" id="MnM-kh-Hhv"/>
                     </connections>
                 </viewController>
