@@ -11,6 +11,10 @@ import Firebase
 
 class ItemTableViewController: UITableViewController {
     
+    var category = [String]()
+    var desc = [String]()
+    
+    @IBOutlet weak var table: UITableView!
     
 
     override func viewDidLoad() {
@@ -28,21 +32,27 @@ class ItemTableViewController: UITableViewController {
             } else {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
+                    self.category.append(document.value(forKey: "category") as! String)
+                    self.desc.append(document.value(forKey: "desc") as! String)
                 }
             }
+            self.table.reloadData()
         }
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell")
+        cell?.textLabel?.text = category[indexPath.row]
+        cell?.detailTextLabel?.text = desc[indexPath.row]
+        return cell!
+        
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return category.count
     }
 
     /*
