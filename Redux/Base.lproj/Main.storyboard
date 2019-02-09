@@ -95,13 +95,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy less, share more!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="0.0" y="84" width="375" height="33.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="gs5-pW-1Ig">
-                                <rect key="frame" x="0.0" y="164.5" width="375" height="227.5"/>
+                                <rect key="frame" x="0.0" y="169.5" width="375" height="227.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I can give:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAq-Qv-AsW">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
@@ -158,7 +158,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uN-kE-40b">
-                                <rect key="frame" x="0.0" y="479.5" width="375" height="36"/>
+                                <rect key="frame" x="0.0" y="484.5" width="375" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Click Here"/>
                                 <connections>
@@ -166,7 +166,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items available for you:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpK-01-3cb">
-                                <rect key="frame" x="0.0" y="441" width="375" height="32.5"/>
+                                <rect key="frame" x="0.0" y="446" width="375" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -196,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688.8" y="359.37031484257875"/>
+            <point key="canvasLocation" x="1646" y="357"/>
         </scene>
         <!--Items Table View Controller-->
         <scene sceneID="cso-Sp-tgc">
@@ -239,11 +239,12 @@
                     </tableView>
                     <connections>
                         <outlet property="table" destination="WAw-UI-Gj9" id="qus-37-KBX"/>
+                        <segue destination="rxa-9a-4qc" kind="show" identifier="toTake" id="U0f-tc-RMp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yn0-Iy-uWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689" y="1147"/>
+            <point key="canvasLocation" x="1646" y="1082"/>
         </scene>
         <!--Give Take Main View Controller-->
         <scene sceneID="o92-DR-feC">
@@ -467,6 +468,56 @@ With more than 8 billion people living on this planet, every small step you take
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATi-DZ-Bph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Take View Controller-->
+        <scene sceneID="Z0S-DM-B0M">
+            <objects>
+                <viewController id="rxa-9a-4qc" customClass="TakeViewController" customModule="Redux" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dLI-4D-eX6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="WPK-al-frs">
+                                <rect key="frame" x="0.0" y="94" width="375" height="222"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8j-Mb-9Lf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-RG-W9P">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zka-cg-oME">
+                                        <rect key="frame" x="0.0" y="183.5" width="375" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qk6-gF-E16" firstAttribute="trailing" secondItem="WPK-al-frs" secondAttribute="trailing" id="4ac-nk-KYo"/>
+                            <constraint firstItem="WPK-al-frs" firstAttribute="leading" secondItem="qk6-gF-E16" secondAttribute="leading" id="8T4-x8-f12"/>
+                            <constraint firstItem="WPK-al-frs" firstAttribute="top" secondItem="qk6-gF-E16" secondAttribute="top" constant="30" id="X23-Jv-xYL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qk6-gF-E16"/>
+                    </view>
+                    <connections>
+                        <outlet property="category" destination="C9E-RG-W9P" id="LDn-xx-pBV"/>
+                        <outlet property="desc" destination="Zka-cg-oME" id="Low-gs-Ovg"/>
+                        <outlet property="name" destination="v8j-Mb-9Lf" id="cPf-bX-sdR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbo-aR-eUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="1082"/>
         </scene>
     </scenes>
     <resources>

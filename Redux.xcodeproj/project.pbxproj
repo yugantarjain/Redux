@@ -16,6 +16,7 @@
 		53212863220D66ED00558AE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53212861220D66ED00558AE3 /* LaunchScreen.storyboard */; };
 		5321286B220D6FDC00558AE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5321286A220D6FDC00558AE3 /* GoogleService-Info.plist */; };
 		5358CE47220E87510082AB15 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358CE46220E87510082AB15 /* ItemsTableViewController.swift */; };
+		5358CE49220EA0B50082AB15 /* TakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358CE48220EA0B50082AB15 /* TakeViewController.swift */; };
 		5370F97B220E083C00E9DABF /* GiveTakeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5370F97A220E083C00E9DABF /* GiveTakeMainViewController.swift */; };
 		53870673220E3FA000435A26 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53870672220E3FA000435A26 /* SignInViewController.swift */; };
 		6BA513477E15B67110EDE35C /* Pods_Redux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5930494E2EF7BCFFD87836CC /* Pods_Redux.framework */; };
@@ -35,6 +36,7 @@
 		53212864220D66ED00558AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5321286A220D6FDC00558AE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5358CE46220E87510082AB15 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		5358CE48220EA0B50082AB15 /* TakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeViewController.swift; sourceTree = "<group>"; };
 		5370F97A220E083C00E9DABF /* GiveTakeMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveTakeMainViewController.swift; sourceTree = "<group>"; };
 		53870672220E3FA000435A26 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5930494E2EF7BCFFD87836CC /* Pods_Redux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Redux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 				5370F97A220E083C00E9DABF /* GiveTakeMainViewController.swift */,
 				53870672220E3FA000435A26 /* SignInViewController.swift */,
 				5358CE46220E87510082AB15 /* ItemsTableViewController.swift */,
+				5358CE48220EA0B50082AB15 /* TakeViewController.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				53212857220D66EC00558AE3 /* AppDelegate.swift in Sources */,
 				53212859220D66EC00558AE3 /* FirstViewController.swift in Sources */,
 				5358CE47220E87510082AB15 /* ItemsTableViewController.swift in Sources */,
+				5358CE49220EA0B50082AB15 /* TakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,11 @@ class ItemsTableViewController: UITableViewController {
     
     var category = [String]()
     var desc = [String]()
+    var name = [String]()
     @IBOutlet var table: UITableView!
+    var cat: String!
+    var des: String!
+    var name1: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +38,7 @@ class ItemsTableViewController: UITableViewController {
 //                    self.desc.append(document.value(forKey: "desc") as! String)
                     self.category.append(document.get("category") as! String)
                     self.desc.append(document.get("desc") as! String)
+                    self.name.append(document.get("name") as! String)
                 }
             }
             self.table.reloadData()
@@ -53,6 +58,24 @@ class ItemsTableViewController: UITableViewController {
         cell?.textLabel?.text = category[indexPath.row]
         cell?.detailTextLabel?.text = desc[indexPath.row]
         return cell!
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        cat = table.cellForRow(at: indexPath)?.textLabel?.text
+        des = table.cellForRow(at: indexPath)?.detailTextLabel?.text
+        name1 = name[indexPath.count]
+        
+        
+        performSegue(withIdentifier: "toTake", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let a = segue.destination as! TakeViewController
+        a.name.text = name1
+        a.category.text = cat
+        a.desc.text = des
         
     }
 
