@@ -478,46 +478,76 @@ With more than 8 billion people living on this planet, every small step you take
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="WPK-al-frs">
-                                <rect key="frame" x="0.0" y="94" width="375" height="222"/>
+                                <rect key="frame" x="0.0" y="94" width="375" height="252"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8j-Mb-9Lf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="llh-HJ-avI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9E-RG-W9P">
-                                        <rect key="frame" x="0.0" y="94" width="375" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="101" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="kHG-Rd-QUI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zka-cg-oME">
-                                        <rect key="frame" x="0.0" y="183.5" width="375" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="202" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MAc-ic-ytd"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dah-cc-OX0">
+                                <rect key="frame" x="146" y="356" width="83" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Contact">
+                                    <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqq-jL-Ynd">
+                                <rect key="frame" x="77" y="472" width="221" height="48"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qk6-gF-E16" firstAttribute="trailing" secondItem="WPK-al-frs" secondAttribute="trailing" id="4ac-nk-KYo"/>
-                            <constraint firstItem="WPK-al-frs" firstAttribute="leading" secondItem="qk6-gF-E16" secondAttribute="leading" id="8T4-x8-f12"/>
-                            <constraint firstItem="WPK-al-frs" firstAttribute="top" secondItem="qk6-gF-E16" secondAttribute="top" constant="30" id="X23-Jv-xYL"/>
+                            <constraint firstItem="lqq-jL-Ynd" firstAttribute="centerX" secondItem="Dah-cc-OX0" secondAttribute="centerX" id="7K9-YI-C5P"/>
+                            <constraint firstItem="lqq-jL-Ynd" firstAttribute="leading" secondItem="qk6-gF-E16" secondAttribute="leading" constant="77" id="8u9-VW-r25"/>
+                            <constraint firstItem="Dah-cc-OX0" firstAttribute="top" secondItem="WPK-al-frs" secondAttribute="bottom" constant="10" id="Qrd-ML-9co"/>
+                            <constraint firstItem="lqq-jL-Ynd" firstAttribute="centerX" secondItem="WPK-al-frs" secondAttribute="centerX" id="RdY-xh-XVs"/>
+                            <constraint firstItem="WPK-al-frs" firstAttribute="top" secondItem="qk6-gF-E16" secondAttribute="top" constant="30" id="THs-49-rId"/>
+                            <constraint firstItem="lqq-jL-Ynd" firstAttribute="top" secondItem="Dah-cc-OX0" secondAttribute="bottom" constant="75" id="Uki-Uh-Xcb"/>
+                            <constraint firstItem="WPK-al-frs" firstAttribute="leading" secondItem="qk6-gF-E16" secondAttribute="leading" id="aih-Qw-H4a"/>
+                            <constraint firstItem="qk6-gF-E16" firstAttribute="trailing" secondItem="WPK-al-frs" secondAttribute="trailing" id="u4P-u8-yGf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qk6-gF-E16"/>
                     </view>
                     <connections>
                         <outlet property="category" destination="C9E-RG-W9P" id="LDn-xx-pBV"/>
+                        <outlet property="confirm" destination="lqq-jL-Ynd" id="TH6-Kg-ekM"/>
                         <outlet property="desc" destination="Zka-cg-oME" id="Low-gs-Ovg"/>
                         <outlet property="name" destination="v8j-Mb-9Lf" id="cPf-bX-sdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbo-aR-eUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="1082"/>
+            <point key="canvasLocation" x="2388" y="1081.7091454272863"/>
         </scene>
     </scenes>
     <resources>

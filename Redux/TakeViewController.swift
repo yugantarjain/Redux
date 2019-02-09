@@ -16,6 +16,7 @@ class TakeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        confirm.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
         name.text = a
@@ -25,6 +26,7 @@ class TakeViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var desc: UILabel!
+    @IBOutlet weak var confirm: UIButton!
     
 
     /*
