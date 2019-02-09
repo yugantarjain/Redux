@@ -220,6 +220,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WSp-Zn-ROT"/>
                     </view>
+                    <connections>
+                        <outlet property="resourcesTable" destination="df8-5p-7kA" id="RlI-a4-BIz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFM-4x-BAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
