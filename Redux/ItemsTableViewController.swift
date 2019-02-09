@@ -31,6 +31,8 @@ class ItemsTableViewController: UITableViewController {
                     print("\(document.documentID) => \(document.data())")
 //                    self.category.append(document.value(forKey: "category") as! String)
 //                    self.desc.append(document.value(forKey: "desc") as! String)
+                    self.category.append(document.get("category") as! String)
+                    self.desc.append(document.get("desc") as! String)
                 }
             }
         }
@@ -38,14 +40,18 @@ class ItemsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return category.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        cell?.textLabel?.text = category[indexPath.row]
+        cell?.detailTextLabel?.text = desc[indexPath.row]
+        return cell!
+        
     }
 
     /*
