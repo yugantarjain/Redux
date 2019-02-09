@@ -209,6 +209,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="hG0-wE-Vkd" eventType="touchUpInside" id="pqd-4o-Rul"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EAR-0B-OHC">
                                 <rect key="frame" x="102" y="358.5" width="171" height="70.5"/>
@@ -262,6 +265,7 @@
                     <connections>
                         <outlet property="noOfItems" destination="Q5u-ib-Al3" id="FLC-Ac-yJ7"/>
                         <outlet property="submitButton" destination="9zQ-79-XMW" id="ONN-Oy-Fkd"/>
+                        <outlet property="text" destination="gGj-Fc-YbG" id="Aum-RL-xlx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Pb-dC-N2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
