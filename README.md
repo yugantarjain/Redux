@@ -5,8 +5,8 @@ Redux at this stage features a platform to allow people to share things with oth
 
 ## Screenshots
 
-Home page, featuring smart nuggets for suggestions and community improvement
 ![Home](https://github.com/yugantarjain/Redux/blob/master/Screenshots/Home.png)
+Home page, featuring smart nuggets for suggestions and community improvement
 
-Sharing platform screen, allows users to give and take shared things
 ![Share](https://github.com/yugantarjain/Redux/blob/master/Screenshots/share.png)
+Sharing platform screen, allows users to give and take shared things
